@@ -1,0 +1,48 @@
+\documentclass{tiba}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+%\layout
+%\lipsum[1-1]
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chapitre/pagedegarde1.tex}	\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents \newpage
+\listoftables    \newpage
+\listoffigures   \newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{monographie/Infrastructures.tex}	
+\input{monographie/PrincipauxRatios.tex}	
+\input{monographie/MoyensHumains.tex}	
+\input{monographie/StructuresRéalisation.tex}	
+\input{monographie/PerformancesActivités.tex}	
+\input{monographie/PrincipalesContraintes.tex}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\includepdf[pages=14-15]{pdf_tuto/F20230_40_13.pdf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{monographie/divers.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cite{ref3}
+%When using BiBTeX
+\bibliographystyle{plain}% alpha  apalike  unsrt abbrv
+\bibliography{bib/bib.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\printindex
+
+\end{document}

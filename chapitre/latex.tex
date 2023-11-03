@@ -1,0 +1,188 @@
+%\chapter{introduction}
+\section{\LaTeX}
+
+\section{indentation}
+\parindent=0cm
+\section{paragraphe}
+% \par 
+% saut de ligne ligne blanche   
+% 02 anti slash \\
+
+
+
+\section{paper size}
+\section{page type}
+  \subsection{one/two side}
+  \subsection{one/two column}
+  \subsection{open right}
+\section{page margin}
+\section{page orientation} portrait landscape
+\section{pages style}      empty plain fancy
+
+
+
+\section{Font sizes} 
+Font sizes are identified by special names, the actual size is not absolute but relative to the font size declared in the documentclass statement 
+\Huge  Huge tres enorme \\
+\huge  huge enorme \\
+\normalsize
+\LARGE   large1 \\
+\normalsize
+\Large   large2 \\
+\normalsize
+\large   large3 \\
+\normalsize  normalsize \\
+normal \\  % latex diminue la taille par apport argument de documentclass 
+\small{small}\\ 
+\footnotesize{footnotesize}\\ 
+\scriptsize{scriptsize}\\
+\tiny{tiny}\\
+en peut utilisé un environnement pour simplifier \\
+\begin{tiny}
+  gjhgjhgjhg \\
+\end{tiny}
+\normalsize
+
+
+% \tiny	        F-tiny.png
+% \scriptsize	  F-scriptsize.png
+% \footnotesize	F-footnotesize.png
+% \small	      F-small.png
+% \normalsize	  F-normalsize.png
+% \large	      F-large.png
+% \Large	      F-large2.png
+% \LARGE	      F-large3.png
+% \huge	        F-huge.png
+% \Huge	        F-huge2.png
+
+
+
+
+
+
+
+
+
+
+\section{Font families}
+By default, in standard LaTeX classes the default style for text is usually a Roman (upright) serif font
+In this example, a command and a switch are used. 
+\texttt{A command is used to change the style 
+of a sentence}.
+
+\sffamily
+A switch changes the style from this point to 
+the end of the document unless another switch is used.
+You can set up the use of sans font as a default in a LaTeX document by using the command:
+
+%  \renewcommand{\familydefault}{\sfdefault}
+% Similarly, for using roman font as a default:
+% 
+%  \renewcommand{\familydefault}{\rmdefault}
+
+serif (roman)	\textrm{Sample Text 0123}	\rmfamily	F-textrm.png
+sans serif	\textsf{Sample Text 0123}	\sffamily	F-textsf.png
+typewriter (monospace)	\texttt{Sample Text 0123}	\ttfamily	F-texttt.png
+
+\section{Font styles}
+he most common font styles in LaTeX are bold, italics and underlined, but there are a few more.
+\textit {text en italique}
+
+\textbf {texte en gras}
+
+\textrm {indentation}
+
+\textsc {indentation}
+
+\emph {indentation}
+
+% medium	\textmd{Sample Text 0123}	\mdseries	F-textmd.png
+% bold	\textbf{Sample Text 0123}	\bfseries	F-textbf.png
+% upright	\textup{Sample Text 0123}	\upshape	F-textrm.png
+% italic	\textit{Sample Text 0123}	\itshape	F-textit2.png
+% slanted	\textsl{Sample Text 0123}	\slshape	F-textsl.png
+% small caps	\textsc{Sample Text 0123}	\scshape	F-textsc.png
+
+
+\section{listes}
+\begin{itemize}
+  \item distribution \\
+      \begin{itemize}
+        \item normale
+      \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+  \item [+] fsdfsdfsdfd
+\end{itemize}
+
+
+\begin{enumerate}
+  \item jkjhkhjh \\
+\end{enumerate}
+
+
+\begin{description}
+  \item[*] jhgjhgjhghg\\
+\end{description}
+
+%\chapter{introduction}
+\section{section}
+\subsection{subsection}
+\subsubsection{subsubsection}
+\paragraph{paragraphe}
+\subparagraph{subparagraphe}
+
+\begin{verbatim}
+verbatim
+\end{verbatim}
+
+\begin{quote}
+quote
+\end{quote}
+
+
+`` entre guillemet ''
+
+\texttt{tibareddha}\\
+
+% \reversemarginpar
+% \marginpar{tibaredha}
+% \normalmarginpar
+% \fbox{tibaredha} 
+
+\section{include pdf}
+%\includepdf{latex.pdf}
+\includepdf[pages=2-10]{./pdf/latex.pdf}
+
+
+\section{index}
+tibaredha\index{tibaredha}
+%\usepackage{makeidx}        dans le preambule
+%\makeindex                  dans le preambule
+%tibaredha\index{tibaredha}  le  mot à indexer  par mot\index{mot}
+%\printindex.                a la fin du document
+
+chou \index{chou}
+%Sous-entrée :            \index{l\’egume!chou}.
+%Entrée formatée :        \index{chou@\emph{chou}}.
+%Numéro de page formaté : \index{chou|textit}.
+%Accents :                \index{ecureuil@\’ecureuil}.
+%Symboles :               \index{delta@$\delta$}.
+%Référence croisée :      \index{chou de Bruxelles|see{chou}}
+% 
+
+\section{bibliographie}
+\subsection{bibliographie 1ere methode}
+% reference bibliographique \cite{ref1}
+% \begin{thebibliography}{99}
+%   \bibitem{ref1}
+%   tiba redha 
+%   \bibitem{ref2}
+%   amranemimi 
+% \end{thebibliography}
+
+\subsection{bibliographie 2eme methode}
+reference bibliographique \cite{ref1} \\
+reference bibliographique \cite{ref2} \\
+reference bibliographique \cite{ref3} \\

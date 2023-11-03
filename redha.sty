@@ -1,0 +1,123 @@
+%% Informations générales
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{redha}[2013/01/13 1.0.0 Custom Package]
+
+%% is equivalent to \usepackage
+%\RequirePackage{lmodern}
+%\RequirePackage{background}
+
+%% Déclaration des options
+%% option-1 'sans serif' 
+\DeclareOption{sans}{\renewcommand{\familydefault}{\sfdefault}}
+%% option-2 'roman' 
+\DeclareOption{roman}{\renewcommand{\familydefault}{\rmdefault}}
+%% option-3 Global indentation option
+\newif\if@neverindent\@neverindentfalse
+\DeclareOption{neverindent}{\@neverindenttrue}
+%% default option
+\ExecuteOptions{roman}
+%% terminates the option processing.
+\ProcessOptions\relax
+
+%% Traditional LaTeX or TeX follows...
+% ...djelfa
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\radp}  {République Algerienne Démocratique et Populaire}
+\newcommand{\ms}    {Ministère de la Santé}
+\newcommand{\wil}   {Djelfa}
+\newcommand{\dsp}[1]{Direction de la Santé et de la Population de la Wilaya de #1}
+\newcommand{\isp}   {Inspection Santé Publique}
+\newcommand{\ispg}  {Inspection Générale de la santé}
+\newcommand{\ispr}  {Inspection Régionale : Wilaya de médéa}
+\newcommand{\cim}   {CIM-10}
+\newcommand{\@np}   {tibaredha}
+\newcommand{\np}    {Dr Redha TIBA}
+
+\renewcommand{\contentsname}{Table des Matières}
+\renewcommand{\listtablename}{Liste des tableaux}
+\renewcommand{\listfigurename}{Liste des figures}
+
+
+%pages  odd impaires
+%pages  even paires
+
+% \setlength{\hoffset}{0pt}
+% \setlength{\voffset}{0pt}
+
+% \setlength{\oddsidemargin}{35pt}
+% \setlength{\evensidemargin}{89pt}
+% \setlength{\topmargin}{22pt}
+
+% \setlength{\headheight}{12pt}
+% \setlength{\headsep}{18pt}
+
+% \setlength{\textwidth}{550pt}
+% \setlength{\textheight}{345pt}
+
+% \setlength{\marginparsep}{7pt}
+% \setlength{\marginparwidth}{125pt}
+
+% \setlength{\footskip}{25pt}
+% \setlength{\marginparpush}{5pt}
+
+
+% \RequirePackage {ifthen}       %pour utiliser les booléens, à mettre avec les autres RequirePackage's 
+% \newboolean {booleenH}         %création du booléen 
+% \setboolean {booleenH}{false}  %affectation de la valeur false
+% \DeclareOption {optionH}{\setboolean {booleenH}{true}}  %Donc, si l'option est demandée,
+% \ifthenelse {\boolean {booleenH}}{\RequirePackage{hyperref}}{} %on affecte à mon booleenH la valeur true.
+% 
+% 
+
+%\newenvironnment {\tibaredha}{<clausesDébut> }{<clausesFin> }
+%\renewcommand{contentsname}{Sommaire}
+% ...
+
+\newenvironment{dedication}
+   {
+    \vspace{6ex}
+    %\begin{quotation}
+    \begin{center}
+    \begin{em}
+   }
+   {
+   \par
+   \end{em}
+   \end{center}
+   %\end{quotation}
+   }
+
+
+% \begin{dedication} 
+% tibaredha
+% \end{dedication}
+
+%latex  +  ins file =  sty file  ins file separe le code de la documentaion
+%latex  +  dtx file =  pdf file  dtx file = code documenté
+
+% condtion in latex
+% 1er exemple
+% \newif \if@couleur \@couleurfalse 
+% \DeclareOption {color }{\@couleurtrue }
+% \if@couleur 
+% \RequirePackage {xcolor } 
+% \fi
+% 2eme exemple
+% \RequirePackage {ifthen}
+% \newboolean {couleur } 
+% \setboolean {couleur }{false } 
+% \DeclareOption {color }{\setboolean {couleur }{true}}
+% 
+% \ifthenelse {\boolean {couleur}}
+% { 
+% \RequirePackage {xcolor}
+% }
+% {
+% %
+% }
+
+\endinput %this must be the last command

@@ -1,0 +1,47 @@
+\documentclass{tiba}
+\begin{document}
+
+%\layout
+%\lipsum[1-1]
+%\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chapitre/pagedegarde1.tex}	\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents \newpage
+\listoftables    \newpage
+\listoffigures   \newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{article/abstract.tex}	
+\input{article/Introduction.tex}	
+\input{article/Materiel_et_methodes.tex}	
+\input{article/Resultat.tex}	
+\input{article/discusion.tex}	
+\input{article/concllusion.tex}	
+\input{article/Références.tex}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\includepdf[pages=14-15]{pdf_tuto/F20230_40_13.pdf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{monographie/divers.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cite{ref3}
+%When using BiBTeX
+\bibliographystyle{plain}% alpha  apalike  unsrt abbrv
+\bibliography{bib/bib.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\printindex
+
+\end{document}
