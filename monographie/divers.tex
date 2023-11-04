@@ -1,4 +1,15 @@
 \newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*
+{\ecrireLettre}[1]
+{
+\hspace{4ex}%
+\ifthenelse{\equal{#1}{M}}{Cher Monsieur,}{Chère Madame,} 
+J'ai le plaisir de vous inviter\dots
+}
+
+\ecrireLettre{M}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
 \centering
 \includegraphics[width=5cm, height=4cm]{img/msp.jpg}
@@ -25,7 +36,7 @@ is the same example.
 % \index{c}ccc\\
 
 Ceci est un document avec une note de bas de page ici\footnote{voici la note}.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \begin{tcolorbox}[colframe = orange, 
                   colback  = orange!50, 
